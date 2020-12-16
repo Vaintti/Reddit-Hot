@@ -1,4 +1,4 @@
-package com.vaintti.reddithot.ui.main
+package com.vaintti.reddithot.models
 
 import kotlinx.serialization.Serializable
 

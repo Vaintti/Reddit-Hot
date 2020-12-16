@@ -3,6 +3,7 @@ package com.vaintti.reddithot.ui.main
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.vaintti.reddithot.databinding.ThreadRowBinding
+import com.vaintti.reddithot.models.RedditThread
 
 class ThreadViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val binding = ThreadRowBinding.bind(itemView)

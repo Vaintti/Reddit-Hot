@@ -1,6 +1,7 @@
 package com.vaintti.reddithot.ui.main
 
 import androidx.lifecycle.LiveData
+import com.vaintti.reddithot.models.RedditThread
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

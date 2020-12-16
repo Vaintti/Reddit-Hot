@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.vaintti.reddithot.R
+import com.vaintti.reddithot.models.RedditThread
 
 class ThreadAdapter: RecyclerView.Adapter<ThreadViewHolder>() {
     var items = emptyList<RedditThread>()
