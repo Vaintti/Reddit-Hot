@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.vaintti.reddithot.R
 import com.vaintti.reddithot.databinding.MainFragmentBinding
+
 
 class MainFragment : Fragment() {
     private lateinit var binding: MainFragmentBinding
@@ -42,8 +43,13 @@ class MainFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        binding.recyclerView.adapter = adapter
-        binding.recyclerView.layoutManager = LinearLayoutManager(context)
+        val layoutManager = LinearLayoutManager(context)
+        val recyclerView = binding.recyclerView
+        val dividerItemDecoration = DividerItemDecoration(recyclerView.context, layoutManager.orientation)
+
+        recyclerView.adapter = adapter
+        recyclerView.layoutManager = layoutManager
+        recyclerView.addItemDecoration(dividerItemDecoration)
     }
 
 }
